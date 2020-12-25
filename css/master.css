@@ -42,4 +42,14 @@ header span{
     background-color: #1e272e;
     color: #FBFBFB;
 }
+.page-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 12px;
+
+    color: white;
+    background-color: #1e272e;
+
+}
 /**********************************/
