@@ -1,0 +1,100 @@
+/*Custom classes
+/**********************************/
+.hide-loading{
+    visibility: hidden;
+}
+.opa-loading{
+    opacity: 0%;
+}
+/**********************************/
+
+/*Loading Screen
+/**********************************/
+#loading-screen{
+    height: 100%; width: 100%;
+    z-index: 999;
+    position: fixed;
+    background-color: #FBFBFB;
+    text-align: center;
+
+    transition: opacity 0.5s;
+}
+/**********************************/
+
+/*Title
+/**********************************/
+#title{
+    font-weight: 200;
+    font-size: clamp(4vw, 120px, 8vw);
+    text-transform: uppercase;
+    color: #1e272e;
+
+    position: relative;
+    top: 200px;
+
+    animation: 1.5s titleAnim-Move, 1s titleAnim-Opa;
+}
+@keyframes titleAnim-Move{
+    0%{top: 100px;}
+    100%{top: 200px;}
+}
+@keyframes titleAnim-Opa{
+    0%{ opacity: 0%;}
+    30%{ opacity: 0%;}
+    100%{opacity: 100%;}
+}
+/**********************************/
+
+/*Desc
+/**********************************/
+#desc{
+    font-weight: 200;
+    font-size: clamp(0.5vw, 16px, 2vw);
+    opacity: 100%;
+    color: #1e272e;
+
+    position: relative;
+    top: 200px;
+
+    animation: 1s descAnim;
+}
+@keyframes descAnim{
+    0%{opacity: 0%;}
+    20%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+/**********************************/
+
+/*Home Button
+/**********************************/
+#loading-screen span{
+    position: relative;
+    top: 500px;
+    text-transform: uppercase;
+
+    animation: 1s buttonAnim;
+}
+#loading-screen span a{
+    text-decoration: none;
+    font-size: clamp(0.5vw, 18px, 3vw);
+    color: #1e272e;
+    border-bottom: 2px solid #1e272e;
+    cursor: pointer;
+
+    padding-right: 20px; padding-left: 20px; 
+    padding-bottom: 10px; padding-top: 10px;
+    border-radius: 2px;
+    margin: 20px;
+
+    transition: background-color 0.5s, color 0.5s;
+}
+#loading-screen span a:hover{
+    background-color: #1e272e;
+    color: #FBFBFB;
+}
+@keyframes buttonAnim{
+    0%{opacity: 0%;}
+    20%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+/**********************************/
