@@ -47,14 +47,15 @@
 
 /*Desc
 /**********************************/
-#desc{
+#desc-box p{
     font-weight: 200;
-    font-size: clamp(0.5vw, 16px, 2vw);
+    font-size: clamp(0.3vw, 16px, 2vw);
     opacity: 100%;
     color: #1e272e;
 
     position: relative;
     top: 200px;
+    margin-bottom: 30px;
 
     animation: 1s descAnim;
 }
@@ -69,9 +70,9 @@
 /**********************************/
 #loading-screen span{
     position: relative;
-    top: 500px;
-    text-transform: uppercase;
+    top: 400px;
 
+    text-transform: uppercase;
     animation: 1s buttonAnim;
 }
 #loading-screen span a{

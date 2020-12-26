@@ -41,9 +41,12 @@
 }
 .img-box p{
     width: fit-content;
+
     margin-top: 10px;
     margin-left: 20px;
     margin-bottom: 10px;
+
+    background-color: #fad390;
 }
 .img-box p::before{
     content: " : ";
